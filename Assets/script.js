@@ -50,13 +50,12 @@ function generatePassword() {
 
     var password = ''; {
       for (var i = 0, i < passwordLength, i++);
-      password = randomArray.randomAll;
-    }
-
-
+      password += randomArray;
     }
 
     return password;
+
+    }
 
   }
 
