@@ -17,7 +17,17 @@ var specialCharacters = '!@#$%^&*()[]{}/?-=+_<>~,.;:`\|"'
 var specialArray = specialCharacters.split('')
 var randomSpecial = specialArray[Math.floor(specialArray.length * Math.random())]
 
+var allCharacters = lowerArray + upperArray + numericArray + specialArray
 
+
+
+var randomAll = allCharacters[Math.floor(allCharacters.length * Math.random())]
+
+
+
+function generatePassword() {
+
+}
 
 
 
@@ -33,7 +43,20 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// Stores user response in variable
+var tagName = prompt("Please enter your desired password length, in number of characters:", "8-128");
+var 
 
+if (tagName < 8 || tagName > 128) {
+  alert("Please enter a valid password length. (8-128 Characters.)");
+} else {
+  var characterTypeSelector = append(randomLower, randomUpper, randomNumeric, randomSpecial)
+
+
+
+
+
+}
 
 
 
@@ -44,9 +67,9 @@ console.log(specialArray);
 console.log(randomLower);
 console.log(randomUpper);
 console.log(randomNumeric);
-console.log(randomSpecial);
+console.log(allCharacters);
 
-console.log(randomLower);
+console.log(randomAll);
 
 //   Pseudo Code
 
