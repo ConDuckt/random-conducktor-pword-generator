@@ -48,12 +48,18 @@ function generatePassword() {
       randomAll += randomArray.randomSpecial;
     }
 
+    var password = ''; {
+      for (var i = 0, i < passwordLength, i++);
+      password = randomArray.randomAll;
+    }
+
+
+    }
+
     return password;
 
   }
 
-
-}
 
 function writePassword() {
   var password = generatePassword();
@@ -63,4 +69,4 @@ function writePassword() {
 
 generateBtn.addEventListener("click", writePassword);
 
-console.log(password)
+console.log(generatePassword())
