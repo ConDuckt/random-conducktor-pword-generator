@@ -49,10 +49,10 @@ function generatePassword() {
     }
 
     var password = ''; {
-      for (var i = 0, i < passwordLength, i++);
+      for (var i = 0, i < randomAll.length, i++);
       password += randomArray;
     }
-
+    
     return password;
 
     }
