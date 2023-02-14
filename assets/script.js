@@ -26,9 +26,9 @@ randomAll = {
 
 function generatePassword() {
 
-  var passwordLength = prompt("Please enter desired password length:", "8-128 characters.");
+  var passwordLengthPrompt = prompt("Please enter desired password length:", "8-128 characters.");
 
-  if (passwordLength < 8 || passwordLength > 128) {
+  if (passwordLengthPrompt < 8 || passwordLengthPrompt > 128) {
     alert("Please enter a valid password length (8-128 characters.)");
   } else {
 
@@ -51,8 +51,8 @@ function generatePassword() {
       password += randomAll.randomSpecial;
     }
 
-  }
     return password;
+  }
 }
 
 function writePassword() {
