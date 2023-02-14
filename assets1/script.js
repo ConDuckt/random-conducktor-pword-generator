@@ -50,6 +50,7 @@ function generatePassword() {
     if (randomSpecial) {
       password += randomAll.randomSpecial;
     }
+
   }
     return password;
 }
